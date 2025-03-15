@@ -3,7 +3,8 @@ import Router from '@/Router'
 import components from '@/data/components'
 
 const {
-  NavBar
+  NavBar,
+  Footer
 } = components
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
     <>
       <NavBar />
       <Router />
+      <Footer />
     </>
   )
 }

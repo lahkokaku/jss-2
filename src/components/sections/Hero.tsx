@@ -34,7 +34,11 @@ const Hero: FC = () => {
       </div>
       <div className='flex gap-3'>
         <Button prominence='secondary'>Projects</Button>
-        <a href='/Resume_Jose Stephen Satrya.pdf' target='_blank'>
+        <a
+          href='/Resume_Jose Stephen Satrya.pdf'
+          target='_blank'
+          rel='noreferrer'
+        >
           <Button>Resume</Button>
         </a>
       </div>

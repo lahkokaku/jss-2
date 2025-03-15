@@ -6,6 +6,7 @@ export default {
   NotFoundPage: lazy(() => import('@/pages/NotFoundPage')),
   // Components
   NavBar: lazy(() => import('@/components/NavBar')),
+  Footer: lazy(() => import('@/components/Footer')),
   // Components Common
   PagePlaceholder: lazy(() => import('@/components/common/PagePlaceholder')),
   TextHighlight: lazy(() => import('@/components/common/TextHighlight')),
