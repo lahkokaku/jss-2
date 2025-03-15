@@ -3,6 +3,7 @@ import { lazy } from 'react'
 export default {
   // Pages
   HomePage: lazy(() => import('@/pages/HomePage')),
+  ProjectsPage: lazy(() => import('@/pages/ProjectsPage')),
   NotFoundPage: lazy(() => import('@/pages/NotFoundPage')),
   // Components
   NavBar: lazy(() => import('@/components/NavBar')),
@@ -17,5 +18,6 @@ export default {
   HeadingTwo: lazy(() => import('@/components/common/HeadingTwo')),
   // Components Sections
   Hero: lazy(() => import('@/components/sections/Hero')),
+  FeaturedProjects: lazy(() => import('@/components/sections/FeaturedProjects')),
   NotFound: lazy(() => import('@/components/sections/NotFound')),
 }
