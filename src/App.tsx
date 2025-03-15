@@ -4,6 +4,7 @@ import useEventListener from './hooks/useEventListener'
 
 const {
   NavBar,
+  ScrollToTop,
   Footer
 } = components
 
@@ -21,6 +22,7 @@ function App() {
     <>
       <NavBar />
       <Router />
+      <ScrollToTop />
       <Footer />
     </>
   )

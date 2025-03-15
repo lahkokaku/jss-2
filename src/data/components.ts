@@ -7,6 +7,7 @@ export default {
   // Components
   NavBar: lazy(() => import('@/components/NavBar')),
   Footer: lazy(() => import('@/components/Footer')),
+  ScrollToTop: lazy(() => import('@/components/ScrollToTop')),
   // Components Common
   PagePlaceholder: lazy(() => import('@/components/common/PagePlaceholder')),
   TextHighlight: lazy(() => import('@/components/common/TextHighlight')),
