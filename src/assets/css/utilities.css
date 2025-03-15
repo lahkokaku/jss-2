@@ -1,0 +1,35 @@
+@utility bg-gradient-light {
+  @apply bg-linear-to-br from-secondary-light to-primary-light;
+}
+
+@utility bg-gradient-dark {
+  @apply bg-linear-to-br from-primary-dark to-secondary-light bg-fixed;
+}
+
+@utility bg-glass {
+  @apply backdrop-blur-xl bg-neutral-100/17.5;
+}
+
+@utility bg-glass-lighter {
+  @apply backdrop-blur-xl bg-neutral-100/40;
+}
+
+.container {
+  @apply sm:px-45 px-5 min-w-full;
+}
+
+.fade-in-up {
+  animation-name: fade-in-up;
+  animation-duration: 1s;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0%;
+    transform: translateY(20%);
+  }
+  to {
+    opacity: 100%;
+    transform: translateY(0%);
+  }
+}

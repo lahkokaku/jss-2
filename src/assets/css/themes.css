@@ -1,0 +1,10 @@
+@theme {
+  --color-light: var(--color-slate-200);
+  --color-dark: var(--color-slate-800);
+  --color-mute: var(--color-slate-500);
+  --color-primary-light: var(--color-blue-400);
+  --color-primary-dark: var(--color-blue-950);
+  --color-secondary-light: var(--color-green-400); 
+  --color-secondary-dark: var(--color-green-950);
+  --color-secondary-dark-trans: oklch(0.393 0.095 152.535 / 0.5);
+}

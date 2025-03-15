@@ -1,0 +1,36 @@
+@layer base {
+  html {
+    font-family: 'Nunito Sans', system-ui, sans-serif;
+  }
+  
+  body {
+    --gradient-pos: 75vw 25vh;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: var(--color-primary-dark);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: 
+      radial-gradient(
+        circle at var(--gradient-pos),
+        var(--color-primary-dark) 0%,
+        var(--color-secondary-dark-trans) 50%,
+        var(--color-secondary-dark-trans) 75%,
+        transparent 100%);
+    color: var(--color-light);
+  }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar{
+    @apply w-[2px];
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    @apply bg-gradient-light rounded-full;
+  }
+  
+  ::-webkit-scrollbar-track{
+    @apply bg-mute;
+  }
+}
