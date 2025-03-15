@@ -1,6 +1,6 @@
-import { useEffect } from 'react'
 import Router from '@/Router'
 import components from '@/data/components'
+import useEventListener from './hooks/useEventListener'
 
 const {
   NavBar,
@@ -8,17 +8,14 @@ const {
 } = components
 
 function App() {
-  useEffect((): (() => void) => {
-    const bodyElement: HTMLBodyElement | null = document.querySelector('body')
-    const updateMousePosition = (e: MouseEventInit): void => {
-      if (bodyElement) {
-        const { clientX, clientY } = e
-        bodyElement.style.setProperty('--gradient-pos', `${clientX}px ${clientY}px`)
-      }
+  const bodyElement: HTMLBodyElement | null = document.querySelector('body')
+  const updateMousePosition = (e: MouseEventInit): void => {
+    if (bodyElement) {
+      const { clientX, clientY } = e
+      bodyElement.style.setProperty('--gradient-pos', `${clientX}px ${clientY}px`)
     }
-    window.addEventListener('mousemove', updateMousePosition)
-    return (): void => window.removeEventListener('mousemove', updateMousePosition)
-  }, [])
+  }
+  useEventListener(bodyElement, 'mousemove', updateMousePosition)
 
   return (
     <>
