@@ -13,6 +13,8 @@ export default {
   TextHighlight: lazy(() => import('@/components/common/TextHighlight')),
   Separator: lazy(() => import('@/components/common/Separator')),
   Button: lazy(() => import('@/components/common/Button')),
+  HeadingOne: lazy(() => import('@/components/common/HeadingOne')),
+  HeadingTwo: lazy(() => import('@/components/common/HeadingTwo')),
   // Components Sections
   Hero: lazy(() => import('@/components/sections/Hero')),
   NotFound: lazy(() => import('@/components/sections/NotFound')),

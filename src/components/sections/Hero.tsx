@@ -1,23 +1,22 @@
 import { FC } from 'react'
 import components from '@/data/components'
+import { Link } from 'react-router-dom'
 
-const { Separator, TextHighlight, Button } = components
+const { Separator, TextHighlight, Button, HeadingOne, HeadingTwo } = components
 
 const Hero: FC = () => {
   return (
     <section className='container flex h-screen flex-col justify-center fade-in-up'>
       <Separator width='w-1/6' className='sm:mb-5 mb-3' />
       <div className='text-lg sm:mb-2 mb-1'>Greetings! My name is</div>
-      <div className='text-2xl sm:mb-2 mb-1'>
-        <span className='sm:text-4xl text-3xl font-bold'>
-          Jose Stephen Satrya
-        </span>
+      <div className='flex text-2xl sm:mb-2 mb-1'>
+        <HeadingOne>Jose Stephen Satrya</HeadingOne>
         &nbsp;&nbsp;👋
       </div>
-      <div className='sm:text-2xl text-xl sm:mb-3 mb-1'>
-        <TextHighlight className='font-bold sm:text-3xl text-2xl'>
-          Software Engineer
-        </TextHighlight>
+      <div className='sm:mb-3 mb-1'>
+        <HeadingTwo>
+          <TextHighlight>Software Engineer</TextHighlight>
+        </HeadingTwo>
       </div>
       <div className='sm:text-lg mb-4 md:w-3/4'>
         I am a Computer Science fresh graduate from BINUS University. Currently,
@@ -33,7 +32,9 @@ const Hero: FC = () => {
         .
       </div>
       <div className='flex gap-3'>
-        <Button prominence='secondary'>Projects</Button>
+        <Link to='/projects'>
+          <Button prominence='secondary'>Projects</Button>
+        </Link>
         <a
           href='/Resume_Jose Stephen Satrya.pdf'
           target='_blank'
