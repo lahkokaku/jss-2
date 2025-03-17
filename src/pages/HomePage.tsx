@@ -1,8 +1,9 @@
 import { FC, Suspense } from 'react'
 import { Helmet } from 'react-helmet'
 import components from '@/data/components'
+import PagePlaceholder from '@/components/common/PagePlaceholder'
 
-const { Hero, PagePlaceholder } = components
+const { Hero } = components
 
 const HomePage: FC = () => {
   return (
