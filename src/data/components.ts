@@ -17,7 +17,7 @@ export default {
   HeadingOne: lazy(() => import('@/components/common/HeadingOne')),
   HeadingTwo: lazy(() => import('@/components/common/HeadingTwo')),
   // Components Sections
-  Hero: lazy(() => import('@/components/sections/Hero')),
-  FeaturedProjects: lazy(() => import('@/components/sections/FeaturedProjects')),
-  NotFound: lazy(() => import('@/components/sections/NotFound')),
+  Hero: lazy(() => import('@/components/sections/home/Hero')),
+  FeaturedProjects: lazy(() => import('@/components/sections/projects/FeaturedProjects')),
+  NotFound: lazy(() => import('@/components/sections/not-found/NotFound')),
 }
