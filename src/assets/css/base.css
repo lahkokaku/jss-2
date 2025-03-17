@@ -16,7 +16,7 @@
         circle at var(--gradient-pos),
         var(--color-primary-dark) 0%,
         var(--color-secondary-dark-trans) 50%,
-        var(--color-secondary-dark-trans) 75%,
+        var(--color-secondary-dark-trans) 60%,
         transparent 100%);
     color: var(--color-light);
   }

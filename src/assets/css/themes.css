@@ -6,5 +6,5 @@
   --color-primary-dark: var(--color-blue-950);
   --color-secondary-light: var(--color-green-400); 
   --color-secondary-dark: var(--color-green-950);
-  --color-secondary-dark-trans: oklch(0.393 0.095 152.535 / 0.5);
+  --color-secondary-dark-trans: oklch(0.393 0.095 152.535 / 0.65);
 }
