@@ -12,7 +12,11 @@ const ScrollToTop: FC = () => {
   const [isShown, setIsShown] = useState<boolean>(false)
 
   const scrollToTop = (): void => {
-    window.scrollTo(0, 0)
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
   }
 
   useEventListener(null, 'scroll', (): void => {
