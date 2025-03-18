@@ -19,6 +19,7 @@ export default {
   HeadingThree: lazy(() => import('@/components/common/HeadingThree')),
   Badge: lazy(() => import('@/components/common/Badge')),
   Card: lazy(() => import('@/components/common/Card')),
+  LinkText: lazy(() => import('@/components/common/LinkText')),
   // Components Sections
   Hero: lazy(() => import('@/components/sections/home/Hero')),
   FeaturedProjects: lazy(() => import('@/components/sections/projects/FeaturedProjects')),
