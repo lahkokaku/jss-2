@@ -22,7 +22,7 @@ const FeaturedProjectCard: FC<FeaturedProjectCardProps> = ({
       </div>
       <div className='p-4'>
         <HeadingThree className='mb-1'>{title}</HeadingThree>
-        <div className='mb-2'>{shortDescription}</div>
+        <div className='mb-4'>{shortDescription}</div>
         <div className='mb-4'>
           {techStack.map((item, i) => (
             <Badge key={i} className='me-1 mb-1'>
