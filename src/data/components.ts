@@ -17,6 +17,7 @@ export default {
   HeadingOne: lazy(() => import('@/components/common/HeadingOne')),
   HeadingTwo: lazy(() => import('@/components/common/HeadingTwo')),
   HeadingThree: lazy(() => import('@/components/common/HeadingThree')),
+  Badge: lazy(() => import('@/components/common/Badge')),
   // Components Sections
   Hero: lazy(() => import('@/components/sections/home/Hero')),
   FeaturedProjects: lazy(() => import('@/components/sections/projects/FeaturedProjects')),
