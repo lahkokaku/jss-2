@@ -31,7 +31,7 @@ const ScrollToTop: FC = () => {
   return (
     <div className={
       clsx(
-        'fixed bottom-16 sm:right-30 right-5 z-20',
+        'fixed sm:bottom-16 bottom-12 sm:right-26 right-5 z-20',
         isShown ? 'opacity-75' : 'opacity-0',
         'transition-all'
       )
