@@ -9,9 +9,9 @@ const ProminenceEnum = {
   tertiary: 'text-light hover:bg-glass',
 }
 const SizeEnum = {
-  small: 'px-3 py-1 sm:text-md text-sm',
-  medium: 'px-4 py-2 sm:text-lg text-md',
-  large: 'px-5 py-3 sm:text-xl text-lg',
+  small: 'px-2 py-1 sm:text-md text-sm',
+  medium: 'px-3 py-2 sm:text-lg text-md',
+  large: 'px-4 py-2 sm:text-xl text-lg',
 }
 
 const Button: FC<ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>> = ({
