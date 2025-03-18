@@ -3,10 +3,10 @@ import components from '@/data/components'
 import { RiArrowUpFill } from '@remixicon/react'
 import clsx from 'clsx'
 import useEventListener from '@/hooks/useEventListener'
+import { app } from '@/config'
 
+const { yScrollOffset } = app
 const { Button } = components
-
-const yScrollOffset = 50
 
 const ScrollToTop: FC = () => {
   const [isShown, setIsShown] = useState<boolean>(false)
