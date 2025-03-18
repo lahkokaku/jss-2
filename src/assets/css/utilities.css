@@ -7,11 +7,11 @@
 }
 
 @utility bg-glass {
-  @apply backdrop-blur-xl bg-neutral-100/17.5;
+  @apply backdrop-blur-xl bg-neutral-100/10;
 }
 
 @utility bg-glass-lighter {
-  @apply backdrop-blur-xl bg-neutral-100/40;
+  @apply backdrop-blur-xl bg-neutral-100/20;
 }
 
 .container {
