@@ -1,7 +1,8 @@
 import { FC } from 'react'
 import components from '@/data/components'
+import { featuredProjects } from '@/data/featuredProjects'
 
-const { Separator, HeadingOne, TextHighlight } = components
+const { Separator, HeadingOne, TextHighlight, FeaturedProjectCard } = components
 
 const FeaturedProjects: FC = () => {
   return (
@@ -11,6 +12,21 @@ const FeaturedProjects: FC = () => {
         <HeadingOne>
           <TextHighlight>Featured Projects</TextHighlight>
         </HeadingOne>
+      </div>
+      <div className='grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-4'>
+        {featuredProjects.map((featuredProject) => {
+          const { title, slug, thumbnail, shortDescription, techStack } = featuredProject
+          return (
+            <FeaturedProjectCard
+              key={slug}
+              title={title}
+              slug={slug}
+              thumbnail={thumbnail}
+              shortDescription={shortDescription}
+              techStack={techStack}
+            />
+          )
+        })}
       </div>
     </section>
   )

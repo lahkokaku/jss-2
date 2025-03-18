@@ -23,5 +23,6 @@ export default {
   // Components Sections
   Hero: lazy(() => import('@/components/sections/home/Hero')),
   FeaturedProjects: lazy(() => import('@/components/sections/projects/FeaturedProjects')),
+  FeaturedProjectCard: lazy(() => import('@/components/sections/projects/FeaturedProjectCard')),
   NotFound: lazy(() => import('@/components/sections/not-found/NotFound')),
 }
