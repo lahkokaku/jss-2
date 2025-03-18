@@ -1,6 +1,7 @@
 import Router from '@/Router'
 import components from '@/data/components'
-import useEventListener from './hooks/useEventListener'
+import useEventListener from '@/hooks/useEventListener'
+import AutoScrollToTop from '@/components/common/AutoScrollToTop'
 
 const {
   NavBar,
@@ -21,6 +22,7 @@ function App() {
   return (
     <>
       <NavBar />
+      <AutoScrollToTop />
       <Router />
       <ScrollToTop />
       <Footer />
