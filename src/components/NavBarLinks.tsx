@@ -13,9 +13,8 @@ const NavBarLinks: FC = () => {
       <LinkText to='/'>Home</LinkText>
       <LinkText to='/projects'>Projects</LinkText>
       <LinkText
-        to={{
-          hash: '#contact',
-        }}
+        to='#contact'
+        ignoreActive={true}
         onClick={scrollToContact}
       >
         Contact
