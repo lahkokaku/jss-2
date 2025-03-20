@@ -1,4 +1,4 @@
-export default interface FeaturedProjects {
+export default interface FeaturedProject {
   title: string,
   slug: string,
   techStack: string[],

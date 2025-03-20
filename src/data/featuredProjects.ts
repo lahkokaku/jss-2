@@ -1,6 +1,6 @@
-import FeaturedProjects from '@/types/data/FeaturedProjects'
+import FeaturedProject from '@/types/data/FeaturedProjects'
 
-export const featuredProjects: FeaturedProjects[] = [
+export const featuredProjects: FeaturedProject[] = [
   {
     title: 'Zeal',
     slug: 'zeal',
