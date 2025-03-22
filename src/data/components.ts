@@ -4,6 +4,7 @@ export default {
   // Pages
   HomePage: lazy(() => import('@/pages/HomePage')),
   ProjectsPage: lazy(() => import('@/pages/ProjectsPage')),
+  ProjectDetailPage: lazy(() => import('@/pages/ProjectDetailPage')),
   NotFoundPage: lazy(() => import('@/pages/NotFoundPage')),
   // Components
   NavBar: lazy(() => import('@/components/NavBar')),
@@ -25,6 +26,7 @@ export default {
   Hero: lazy(() => import('@/components/sections/home/Hero')),
   FeaturedProjects: lazy(() => import('@/components/sections/projects/FeaturedProjects')),
   FeaturedProjectCard: lazy(() => import('@/components/sections/projects/FeaturedProjectCard')),
+  ProjectDetail: lazy(() => import('@/components/sections/project-detail/ProjectDetail')),
   ProjectDetailHeader: lazy(() => import('@/components/sections/project-detail/ProjectDetailHeader')),
   ProjectDetailDescription: lazy(() => import('@/components/sections/project-detail/ProjectDetailDescription')),
   ProjectDetailLink: lazy(() => import('@/components/sections/project-detail/ProjectDetailLink')),
