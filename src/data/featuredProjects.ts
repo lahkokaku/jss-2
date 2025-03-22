@@ -2,6 +2,38 @@ import FeaturedProject from '@/types/data/FeaturedProjects'
 
 export const featuredProjects: FeaturedProject[] = [
   {
+    title: 'Jss 2',
+    slug: 'jss-2',
+    techStack: ['React.js', 'TypeScript', 'Tailwind CSS'],
+    shortDescription: `Second iteration of my personal website made with React.js and TypeScript.`,
+    description: {
+      introduction: `Second iteration of my personal website made with React.js and TypeScript, featuring a Glassmorphism UI design. This website showcases some of the projects I developed and also provide ways to contact me.`,
+    },
+    codeDisclaimer: false,
+    linkCode: [
+      {
+        type: 'Code',
+        link: 'https://github.com/lahkokaku/jss-2'
+      }
+    ],
+    linkWeb: 'lahkokaku.github.io',
+    thumbnail: 'jss-2-home.webp',
+    interfaces: [
+      {
+        description: 'Home Page',
+        link: 'jss-2-home.webp'
+      },
+      {
+        description: 'Featured Projects Page',
+        link: 'jss-2-featured-projects.webp'
+      },
+      {
+        description: 'Project Detail',
+        link: 'jss-2-project-detail.webp'
+      }
+    ]
+  },
+  {
     title: 'Zeal',
     slug: 'zeal',
     techStack: ['React.js', 'Next.js', 'NextAuth', 'MongoDB', 'Mongoose', 'Tailwind CSS', 'MUI'],
