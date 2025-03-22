@@ -51,7 +51,6 @@ const NavBar: FC = () => {
         {isMobile && (
           <div className='relative'>
             <RiMenu3Fill
-              tabIndex={0}
               onClick={toggleDropdown}
               onBlur={toggleDropdown}
               className='text-primary-light focus:outline-primary-light'
