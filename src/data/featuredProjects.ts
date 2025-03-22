@@ -7,7 +7,7 @@ export const featuredProjects: FeaturedProject[] = [
     techStack: ['React.js', 'Next.js', 'NextAuth', 'MongoDB', 'Mongoose', 'Tailwind CSS', 'MUI'],
     shortDescription: `Online learning platform with integrated features to streamline student's learning process.`,
     description: {
-      introduction: `A project made for my thesis. For this project, we made an online learning platform that has all of the features that student's need when they are studying. Therefore they can use this application as one stop solution without having the need to switch between multiple applications. Some of those features are <b>courses</b>, <b>notes</b>, <b>forum</b>, <b>schedule</b>, and <b>contact</b> (student can chat and call with each outher).`,
+      introduction: `A project made for my thesis. For this project, we made an online learning platform that has all of the features that student's need when they are studying. Therefore they can use this application as one stop solution without having the need to switch between multiple applications. Some of those features are <b>courses</b>, <b>notes</b>, <b>forum</b>, <b>schedule</b>, and <b>contact</b> (student can chat and call with each other).`,
       role: 'It was developed by a team of 3 person. We did the research, requirements gathering, system design, code development, testing, and evaluation of the application. During development, I was mainly in charge of the contact feature as well as helping other member to fix bugs.'
     },
     codeDisclaimer: false,
