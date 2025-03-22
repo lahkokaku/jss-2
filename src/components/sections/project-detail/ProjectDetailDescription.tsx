@@ -11,7 +11,7 @@ const ProjectDetailDescription: FC<ProjectDetailDescriptionProps> = ({
   role,
 }) => {
   return (
-    <Card className='p-5 sm:mb-8 mb-4'>
+    <Card className='p-5 sm:mb-8 mb-4 fade-in-up'>
       <div className='flex gap-2 items-center mb-3'>
         <RiInformation2Fill className='text-secondary-light' />
         <HeadingThree>Description</HeadingThree>
