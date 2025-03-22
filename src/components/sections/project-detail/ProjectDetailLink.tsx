@@ -11,13 +11,13 @@ const ProjectDetailLink: FC<ProjectDetailLinkProps> = ({
   linkWeb
 }) => {
   return (
-    <Card className='p-5 sm:mb-8 mb-4 fade-in-up'>
-      <div className='flex gap-2 items-center mb-3'>
+    <Card className='flex flex-col gap-2 p-5 sm:mb-8 mb-4 fade-in-up'>
+      <div className='flex gap-2 items-center mb-1'>
         <RiLinksFill className='text-secondary-light' />
         <HeadingThree>Links</HeadingThree>
       </div>
       {linkCode && (
-        <div className='mb-2'>
+        <div>
           <div className='text-secondary-light text-lg font-bold'>Code Link</div>
           {
             linkCode.map((({type, link}) => (
@@ -27,7 +27,7 @@ const ProjectDetailLink: FC<ProjectDetailLinkProps> = ({
         </div>
       )}
       {linkWeb && (
-        <div className='mb-2'>
+        <div>
           <div className='text-secondary-light text-lg font-bold'>Web Link</div>
           <div className='sm:text-base text-sm'><LinkText to={linkWeb}>{linkWeb}</LinkText></div>
         </div>
