@@ -26,5 +26,6 @@ export default {
   FeaturedProjects: lazy(() => import('@/components/sections/projects/FeaturedProjects')),
   FeaturedProjectCard: lazy(() => import('@/components/sections/projects/FeaturedProjectCard')),
   ProjectDetailHeader: lazy(() => import('@/components/sections/project-detail/ProjectDetailHeader')),
+  ProjectDetailDescription: lazy(() => import('@/components/sections/project-detail/ProjectDetailDescription')),
   NotFound: lazy(() => import('@/components/sections/not-found/NotFound')),
 }
