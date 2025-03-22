@@ -5,6 +5,7 @@ import components from '@/data/components'
 const { Card, HeadingThree, Badge, LinkText } = components
 
 const FeaturedProjectCard: FC<FeaturedProjectCardProps> = ({
+  index,
   title,
   slug,
   thumbnail,
@@ -18,6 +19,7 @@ const FeaturedProjectCard: FC<FeaturedProjectCardProps> = ({
           src={`/assets/images/${slug}/${thumbnail}`}
           alt='title'
           className='object-cover rounded-t-xl'
+          loading={index < 2 ? 'eager' : 'lazy'}
         />
       </div>
       <div className='p-4'>

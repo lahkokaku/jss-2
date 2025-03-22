@@ -14,10 +14,11 @@ const FeaturedProjects: FC = () => {
         </HeadingOne>
       </div>
       <div className='grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-4'>
-        {featuredProjects.map((featuredProject) => {
+        {featuredProjects.map((featuredProject, index) => {
           const { title, slug, thumbnail, shortDescription, techStack } = featuredProject
           return (
             <FeaturedProjectCard
+              index={index}
               key={slug}
               title={title}
               slug={slug}

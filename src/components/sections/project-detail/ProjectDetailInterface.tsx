@@ -23,7 +23,7 @@ const ProjectDetailInterface: FC<ProjectDetailInterfaceProps> = ({
                 <div key={link}>
                   <div className='sm:text-base text-sm'>{description}</div>
                   <div className='max-h-[350px] overflow-y-auto'>
-                    <img src={`/assets/images/${slug}/${link}`} alt={description} />
+                    <img src={`/assets/images/${slug}/${link}`} alt={description} loading='lazy' />
                   </div>
                 </div>
               ))
