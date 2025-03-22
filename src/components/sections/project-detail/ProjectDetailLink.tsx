@@ -3,7 +3,7 @@ import { FC } from 'react'
 import components from '@/data/components'
 import { RiLinksFill } from '@remixicon/react'
 
-const { Card, HeadingThree, LinkText } = components
+const { Card, HeadingThree } = components
 
 const ProjectDetailLink: FC<ProjectDetailLinkProps> = ({
   codeDisclaimer,
@@ -23,7 +23,16 @@ const ProjectDetailLink: FC<ProjectDetailLinkProps> = ({
           </div>
           {linkCode.map(({ type, link }) => (
             <div key={link} className='sm:text-base text-sm'>
-              {type}: <LinkText to={link}>{link}</LinkText>
+              {type}:{' '}
+              <a
+                href={link}
+                target='_blank'
+                rel='noreferrer'
+                aria-label={type}
+                className='text-secondary-light'
+              >
+                {link}
+              </a>
             </div>
           ))}
         </div>
@@ -32,7 +41,15 @@ const ProjectDetailLink: FC<ProjectDetailLinkProps> = ({
         <div>
           <div className='text-secondary-light text-lg font-bold'>Web Link</div>
           <div className='sm:text-base text-sm'>
-            <LinkText to={linkWeb}>{linkWeb}</LinkText>
+            <a
+              href={linkWeb}
+              target='_blank'
+              rel='noreferrer'
+              aria-label='Link to Website'
+              className='text-secondary-light'
+            >
+              {linkWeb}
+            </a>
           </div>
         </div>
       )}
