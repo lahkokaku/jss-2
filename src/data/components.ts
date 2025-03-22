@@ -28,5 +28,6 @@ export default {
   ProjectDetailHeader: lazy(() => import('@/components/sections/project-detail/ProjectDetailHeader')),
   ProjectDetailDescription: lazy(() => import('@/components/sections/project-detail/ProjectDetailDescription')),
   ProjectDetailLink: lazy(() => import('@/components/sections/project-detail/ProjectDetailLink')),
+  ProjectDetailInterface: lazy(() => import('@/components/sections/project-detail/ProjectDetailInterface')),
   NotFound: lazy(() => import('@/components/sections/not-found/NotFound')),
 }

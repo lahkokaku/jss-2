@@ -16,8 +16,8 @@ export default interface FeaturedProject {
   ] | null,
   linkWeb: string | null,
   thumbnail: string,
-  interfaces: {
+  interfaces: [{
     description: string,
     link: string
-  }[] | null
+  }] | null
 }
