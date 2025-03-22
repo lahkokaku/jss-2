@@ -56,7 +56,7 @@ const NavBar: FC = () => {
               className='text-primary-light focus:outline-primary-light'
             />
             {isToggled && (
-              <div className='absolute right-0 mt-2 bg-glass flex flex-col gap-2 p-3 rounded-lg'>
+              <div className='absolute right-0 mt-2 bg-secondary-dark-trans flex flex-col gap-2 p-3 rounded-lg'>
                 <NavBarLinks />
               </div>
             )}
