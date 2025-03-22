@@ -8,16 +8,14 @@ export default interface FeaturedProject {
     role?: string
   },
   codeDisclaimer: boolean,
-  linkCode: [
-    {
+  linkCode: {
       type: string,
       link: string
-    }
-  ] | null,
+  } [] | null,
   linkWeb: string | null,
   thumbnail: string,
-  interfaces: [{
+  interfaces: {
     description: string,
     link: string
-  }] | null
+  } [] | null
 }
