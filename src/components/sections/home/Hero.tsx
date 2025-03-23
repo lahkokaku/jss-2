@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import components from '@/data/components'
 import { Link } from 'react-router-dom'
+import socials from '@/data/social'
 
 const { Separator, TextHighlight, Button, HeadingOne, HeadingTwo } = components
 
@@ -31,7 +32,7 @@ const Hero: FC = () => {
         </TextHighlight>
         .
       </div>
-      <div className='flex gap-3'>
+      <div className='flex gap-3 items-center'>
         <Link to='/projects'>
           <Button prominence='secondary'>Projects</Button>
         </Link>
@@ -39,9 +40,21 @@ const Hero: FC = () => {
           href='/Resume_Jose Stephen Satrya.pdf'
           target='_blank'
           rel='noreferrer'
+          className='me-1'
         >
           <Button>Resume</Button>
         </a>
+        {socials.map((social, i) => (
+          <a
+            key={i}
+            href={social.link}
+            target='_blank'
+            rel='noreferrer'
+            aria-label={social.name}
+          >
+            {social.icon}
+          </a>
+        ))}
       </div>
     </section>
   )
