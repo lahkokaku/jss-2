@@ -16,7 +16,7 @@ export const featuredProjects: FeaturedProject[] = [
         link: 'https://github.com/lahkokaku/jss-2'
       }
     ],
-    linkWeb: 'lahkokaku.github.io',
+    linkWeb: 'https://lahkokaku.github.io',
     thumbnail: 'jss-2-home.webp',
     interfaces: [
       {
