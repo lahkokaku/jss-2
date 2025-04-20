@@ -4,12 +4,10 @@ import { FC, startTransition, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { app } from '@/config'
 import { getIsMobile } from '@/utils/responsive'
-import components from '@/data/components'
+import NavBarLinks from '@/components/NavBarLinks'
 import { RiMenu3Fill } from '@remixicon/react'
 
 const { yScrollOffset } = app
-
-const { NavBarLinks } = components
 
 const NavBar: FC = () => {
   const [isMobile, setIsMobile] = useState<boolean>(getIsMobile())

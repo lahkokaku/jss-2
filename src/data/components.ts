@@ -8,7 +8,6 @@ export default {
   NotFoundPage: lazy(() => import('@/pages/NotFoundPage')),
   // Components
   NavBar: lazy(() => import('@/components/NavBar')),
-  NavBarLinks: lazy(() => import('@/components/NavBarLinks')),
   Footer: lazy(() => import('@/components/Footer')),
   ScrollToTop: lazy(() => import('@/components/ScrollToTop')),
   // Components Common
