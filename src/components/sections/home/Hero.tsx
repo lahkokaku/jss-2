@@ -20,7 +20,7 @@ const Hero: FC = () => {
         </HeadingTwo>
       </div>
       <div className='sm:text-lg mb-4 md:w-3/4'>
-        I am a Computer Science fresh graduate from BINUS University. Currently,
+        I am a recent Computer Science graduate from BINUS University. Currently,
         I am undergoing an internship as a Software Engineer at Blibli.com. I am
         passionate to explore more about software engineering, especially{' '}
         <TextHighlight className='sm:font-bold sm:text-2xl font-extrabold'>
